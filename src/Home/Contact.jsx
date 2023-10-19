@@ -21,20 +21,20 @@ const Contact = () => {
           <Icon className=' w-20 h-20 rounded-full text-white  p-2 border-2  border-[rgb(255,69,0)]  ' icon="line-md:youtube-filled" />
           </button>
           {isOpen && (
-    <div className="fixed inset-0 flex items-center justify-center z-10">
-      <div className="modal-content bg-white p-4  rounded-lg">
-        <span onClick={closeModal} className="close absolute top-0 right-0 p-2 cursor-pointer">
-          &times;
+    <div className="fixed inset-0 bg-gray-900 bg-opacity-80  flex items-center justify-center z-10">
+      <div className="modal-content relative bg-black p-4  rounded-lg">
+        <span onClick={closeModal} className="close absolute  -top-8  -right-6 p-2 cursor-pointer">
+        <Icon className=' text-white bg-black btn-circle' icon="ic:twotone-close" />
         </span>
         <iframe
-         width="450"
-          height="445"
+         width="750"
+          height="350"
            src="https://www.youtube.com/embed/7KmXhRJuEi8?si=_lJzlKKHDacO_3DR"
             title="YouTube video player"
              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
              allowfullscreen
-            //  className='w-full'
+             className='shadow-2xl '
              >
             
              </iframe>
