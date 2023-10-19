@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Banner from '../components/banner/Banner';
 import { Icon } from '@iconify/react';
-import images from '../assets/img-bg.jpg'
+
+import About from './About';
+import BannerFix from '../components/banner/BannerFix';
+
 
 const Home = () => {
     const [visas, setVisas] = useState()
@@ -31,6 +34,13 @@ const Home = () => {
                 ))
               }
               </div>
+              <div className='mt-20 bg-[rgb(248,249,251)]'>
+              <About></About>
+              </div>
+              <div className='mt-12'>
+                <BannerFix></BannerFix>
+              </div>
+              
             </div>
     );
 };
