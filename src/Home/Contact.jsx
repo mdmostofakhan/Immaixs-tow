@@ -1,46 +1,104 @@
-import React, { useState } from 'react';
-import { Icon } from '@iconify/react';
+import React from 'react';
+import images from '../assets/bg-img2.jpg'
+
+
+import { Icon } from "@iconify/react";
+
+
 
 const Contact = () => {
-    const [isOpen, setIsOpen] = useState(false)
-
-    const openModel = () =>{
-        setIsOpen(true);
-    }
-
-    const closeModal = () => {
-        setIsOpen(false)
-    }
+   
 
     return (
-        <div className='mt-16 text-center'>
-          <button 
-          onClick={openModel}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 "
-          >
-          <Icon className=' w-20 h-20 rounded-full text-white  p-2 border-2  border-[rgb(255,69,0)]  ' icon="line-md:youtube-filled" />
-          </button>
-          {isOpen && (
-    <div className="fixed inset-0 bg-gray-900 bg-opacity-80  flex items-center justify-center z-10">
-      <div className="modal-content relative bg-black p-4  rounded-lg">
-        <span onClick={closeModal} className="close absolute  -top-8  -right-6 p-2 cursor-pointer">
-        <Icon className=' text-white bg-black btn-circle' icon="ic:twotone-close" />
-        </span>
-        <iframe
-         width="750"
-          height="350"
-           src="https://www.youtube.com/embed/7KmXhRJuEi8?si=_lJzlKKHDacO_3DR"
-            title="YouTube video player"
-             frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-             allowfullscreen
-             className='shadow-2xl '
-             >
-            
-             </iframe>
-      </div>
-    </div>
-  )}
+        <div className='mt-20'>
+       <div
+        className='h-[700px] w-full     bg-fixed bg-cover bg-no-repeat'
+       style={{
+          backgroundImage: `url(${images})`
+       }}
+       >
+           <div className='w-10/12 mx-auto'>
+           <div className='flex items-center justify-center ml-60   gap-20'>
+           <div className='text-white w-2/4 '>
+             <p className='ml-3 font-semibold'>FREE 24/7 SUPPORT</p>
+             <p className='text-5xl font-semibold mt-8'>Get Free & Quality Online Consultation</p>
+             <p className='text-xl  font-semibold mt-8'>Euismod risus auctor egestas augue mauri viverra euismod tortor eugiat a mauris placerat</p>
+             <p className='mt-5 '>Fringilla risus nec, luctus mauris orci auctor purus euismod and pretium purus at pretium ligula rutrum viverra tortor sapien sodales and primis ligula risus auctor egestas augue mauri viverra tortor in iaculis placerat eugiat mauris ipsum viverra tortor gravida</p>
+           </div>
+
+           <div className='w-3/4 mt-16'>
+           <div className="  shadow-2xl w-2/4 p-12   bg-white ">
+           <p className='font-semibold text-black text-xl'>Request Free Consultation</p>
+           <div className="mt-4  w-full">
+              <div className="w-full ">
+                <input
+                  name="name"
+                  type="name"
+                  placeholder="Name*"
+                  required
+                  className=" border  w-full border-black p-4 "
+                />
+              </div>
+            </div>
+            <div className="mt-4  w-full">
+              <div className="w-full ">
+                <input
+                  name="phone"
+                  type="phone"
+                  placeholder="Mobile Number*"
+                  required
+                  className=" border  w-full border-black p-4 "
+                />
+              </div>
+            </div>
+            <div className="mt-4  w-full">
+              <div className="w-full ">
+                <input
+                  name="Email"
+                  type="Email"
+                  placeholder="Email*"
+                  required
+                  className=" border  w-full border-black p-4 "
+                />
+              </div>
+            </div>
+            <div className="mt-4   w-full">
+              <div className="   w-full relative">
+                <input
+                  name="password"
+                  type="password"
+                  placeholder="Password"
+                  required
+                  className=" border w-full  border-black p-4 "
+                />
+                <div className="absolute right-1 top-3">
+                 <Icon className='text-2xl' icon="mingcute:selector-vertical-fill" />
+                </div>
+              </div>
+            </div>
+            <div className="mt-4  w-full">
+              <div className="  w-full relative">
+                <input
+                  name="password"
+                  type="password"
+                  
+                  placeholder="Confirm Password"
+                  required
+                  className=" border w-full  border-black p-4 "
+                />
+                <div className="absolute right-1 top-3">
+                 <Icon className='text-2xl' icon="mingcute:selector-vertical-fill" />
+                </div>
+              </div>
+            </div>
+            <div className="bg-[rgb(255,69,0)] flex justify-center border-2 border-black hover:bg-white  items-center w-full p-4 mt-8">
+              <button className="text-white font-semibold z-10 hover:text-black ">SEND REQUEST</button>
+            </div>
+           </div>
+           </div>
+           </div>
+           </div>
+       </div>
         </div>
     );
 };

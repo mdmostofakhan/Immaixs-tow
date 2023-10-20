@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
 
 const Navbar = () => {
-  const texts = ["HOME", "ABOUT", "CONTACT"];
+  const texts = ["Home", "ABOUT", "CONTACT"];
 
   return (
     <div className="mt-8">
