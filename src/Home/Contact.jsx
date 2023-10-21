@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import images from '../assets/bg-img2.jpg'
 
 
@@ -62,35 +62,39 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="mt-4   w-full">
-              <div className="   w-full relative">
-                <input
-                  name="password"
-                  type="password"
-                  placeholder="Password"
-                  required
-                  className=" border w-full  border-black p-4 "
-                />
-                <div className="absolute right-1 top-3">
-                 <Icon className='text-2xl' icon="mingcute:selector-vertical-fill" />
+            <div className="mt-4 w-full">
+                <div className="w-full relative">
+                  <div className="relative">
+                    <select className="bg-gray-50 border border-gray-300 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500">
+                      <option selected>Select Visa</option>
+                      <option value="US">Student Visa</option>
+                      <option value="CA">Travel Visa</option>
+                      <option value="FR">Working Visa</option>
+                      <option value="DE">Business Visa</option>
+                      <option value="DE">Visitor Visa</option>
+                      <option value="DE">PR Visa</option>
+                    </select>
+             
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="mt-4  w-full">
-              <div className="  w-full relative">
-                <input
-                  name="password"
-                  type="password"
-                  
-                  placeholder="Confirm Password"
-                  required
-                  className=" border w-full  border-black p-4 "
-                />
-                <div className="absolute right-1 top-3">
-                 <Icon className='text-2xl' icon="mingcute:selector-vertical-fill" />
+            <div className="mt-4 w-full">
+                <div className="w-full relative">
+                  <div className="relative">
+                    <select className="bg-gray-50 border border-gray-300  block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500">
+                      <option selected>Visa For</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Bangladesh</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                      <option value="DE">Japan</option>
+                      <option value="DE">Singapore</option>
+                    </select>
+             
+                  </div>
                 </div>
               </div>
-            </div>
+
             <div className="bg-[rgb(255,69,0)] flex justify-center border-2 border-black hover:bg-white  items-center w-full p-4 mt-8">
               <button className="text-white font-semibold z-10 hover:text-black ">SEND REQUEST</button>
             </div>
