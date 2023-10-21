@@ -4,6 +4,7 @@ import { Icon } from '@iconify/react';
 
 import About from './About';
 import BannerFix from '../components/banner/BannerFix';
+import Immigration from './Immigration';
 
 
 const Home = () => {
@@ -40,7 +41,9 @@ const Home = () => {
               <div className='mt-12'>
                 <BannerFix></BannerFix>
               </div>
-              
+              <div>
+                <Immigration></Immigration>
+              </div>
             </div>
     );
 };

@@ -27,8 +27,8 @@ const Contact = () => {
            </div>
 
            <div className='w-3/4 mt-16'>
-           <div className="  shadow-2xl w-[55%] p-8   bg-white ">
-           <p className='font-semibold text-black text-xl'>Request Free Consultation</p>
+           <div className="  shadow-2xl w-[55%] p-8  rounded bg-white ">
+           <p className='font-semibold text-center text-black text-2xl'>Request Free Consultation</p>
            <div className="mt-8  w-full">
               <div className="w-full ">
                 <input
