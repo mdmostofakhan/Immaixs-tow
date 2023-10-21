@@ -18,7 +18,7 @@ const Contact = () => {
        }}
        >
            <div className='w-10/12 mx-auto'>
-           <div className='flex items-center justify-center ml-60   gap-20'>
+           <div className='flex items-center justify-center ml-72   gap-40'>
            <div className='text-white w-2/4 '>
              <p className='ml-3 font-semibold'>FREE 24/7 SUPPORT</p>
              <p className='text-5xl font-semibold mt-8'>Get Free & Quality Online Consultation</p>
@@ -27,45 +27,45 @@ const Contact = () => {
            </div>
 
            <div className='w-3/4 mt-16'>
-           <div className="  shadow-2xl w-2/4 p-12   bg-white ">
+           <div className="  shadow-2xl w-[55%] p-8   bg-white ">
            <p className='font-semibold text-black text-xl'>Request Free Consultation</p>
-           <div className="mt-4  w-full">
+           <div className="mt-8  w-full">
               <div className="w-full ">
                 <input
                   name="name"
                   type="name"
                   placeholder="Name*"
                   required
-                  className=" border  w-full border-black p-4 "
+                  className=" border  w-full border-black p-3 "
                 />
               </div>
             </div>
-            <div className="mt-4  w-full">
+            <div className="mt-6  w-full">
               <div className="w-full ">
                 <input
                   name="phone"
                   type="phone"
                   placeholder="Mobile Number*"
                   required
-                  className=" border  w-full border-black p-4 "
+                  className=" border  w-full border-black p-3 "
                 />
               </div>
             </div>
-            <div className="mt-4  w-full">
+            <div className="mt-6  w-full">
               <div className="w-full ">
                 <input
                   name="Email"
                   type="Email"
                   placeholder="Email*"
                   required
-                  className=" border  w-full border-black p-4 "
+                  className=" border  w-full border-black p-3 "
                 />
               </div>
             </div>
-            <div className="mt-4 w-full">
+            <div className="mt-6 w-full">
                 <div className="w-full relative">
                   <div className="relative">
-                    <select className="bg-gray-50 border border-gray-300 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500">
+                    <select className="bg-gray-50 border border-gray-300 block w-full p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500">
                       <option selected>Select Visa</option>
                       <option value="US">Student Visa</option>
                       <option value="CA">Travel Visa</option>
@@ -78,10 +78,10 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-            <div className="mt-4 w-full">
+            <div className="mt-6 w-full">
                 <div className="w-full relative">
                   <div className="relative">
-                    <select className="bg-gray-50 border border-gray-300  block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500">
+                    <select className="bg-gray-50 border border-gray-300  block w-full p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500">
                       <option selected>Visa For</option>
                       <option value="US">United States</option>
                       <option value="CA">Bangladesh</option>
