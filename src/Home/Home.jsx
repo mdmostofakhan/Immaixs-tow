@@ -5,6 +5,7 @@ import { Icon } from '@iconify/react';
 import About from './About';
 import BannerFix from '../components/banner/BannerFix';
 import Immigration from './Immigration';
+import Card from './Card';
 
 
 const Home = () => {
@@ -43,6 +44,9 @@ const Home = () => {
               </div>
               <div>
                 <Immigration></Immigration>
+              </div>
+              <div>
+                 <Card></Card>
               </div>
             </div>
     );
