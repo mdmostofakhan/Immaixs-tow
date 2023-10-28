@@ -1,23 +1,20 @@
 import React, { useEffect, useState } from "react";
 
 const Card = () => {
-    
-  const [tabs, setTabs] = useState()
+  const [tabs, setTabs] = useState();
   const [selectedCategory, setSelectedCategory] = useState("category");
 
   useEffect(() => {
     fetch("partnar.json")
       .then((res) => res.json())
       .then((data) => setTabs(data));
-     
   }, []);
 
   const handleCategorySelection = (categoryName) => {
-    setSelectedCategory(categoryName)
-  }
+    setSelectedCategory(categoryName);
+  };
 
-console.log(tabs)
-
+  console.log(tabs);
 
   return (
     <div className="my-20 container mx-auto">
@@ -33,41 +30,43 @@ console.log(tabs)
       </div>
 
       <div className="flex justify-center mt-8 items-center gap-5">
-        {tabs?.map((category, index) => { 
-            const categoryName = Object.keys(category)[0];
-          return(
+        {tabs?.map((category, index) => {
+          const categoryName = Object.keys(category)[0];
+          return (
             <button
-            key={index}
-            className={`hover:text-red-800 cursor-pointer  ${selectedCategory === categoryName ? " text-red-800 " : "" }`}
-            onClick={()  => handleCategorySelection(categoryName)}
-          >
-            {categoryName} /
-          </button>
-          )
-          })}
+              key={index}
+              className={`hover:text-red-800 cursor-pointer  ${
+                selectedCategory === categoryName ? " text-red-800 " : ""
+              }`}
+              onClick={() => handleCategorySelection(categoryName)}
+            >
+              {categoryName} /
+            </button>
+          );
+        })}
       </div>
 
-      <div className=" ">
+      <div className="">
         <div className="">
-          {tabs?.map((category, index) => { 
+          {tabs?.map((category, index) => {
             const categoryName = Object.keys(category)[0];
-            if(categoryName === selectedCategory){
-                const categoryItems = category[categoryName]
-                return(
-                    <div key={index} className="grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2   justify-center  gap-5 mt-8">
-                    {categoryItems?.map((item, index) => (
-                        <div key={index} className="border w-full p-4">
-                         <img className="w-full" src={item.image} alt="" />
-                         <h2>{item.title}</h2>
-                        </div>
-                    )
-                    
-                    )}    
-                     </div>
-                )
+            if (categoryName === selectedCategory) {
+              const categoryItems = category[categoryName];
+              return (
+                <div
+                  key={index}
+                  className="grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 w-[65%] ml-72 justify-center  gap-5 mt-8"
+                >
+                  {categoryItems?.map((item, index) => (
+                    <div key={index} className="border hover:shadow-xl duration-300 text-center  p-8">
+                      <img className="w-full" src={item.image} alt="" />
+                      <h2>{item.title}</h2>
+                    </div>
+                  ))}
+                </div>
+              );
             }
-           
-})}
+          })}
         </div>
       </div>
     </div>

@@ -1,15 +1,16 @@
 [
   {
-    "allcountry": [
+    "All Country": [
       {
         "id": 1,
         "title": "Enter University Name Here",
         "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-1.png"
-      }
-    ]
-  },
-  {
-    "canada": [
+      },
+      {
+        "id": 2,
+        "title": "Enter University Name Here",
+        "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-2.png"
+      },
       {
         "id": 2,
         "title": "Enter University Name Here",
@@ -24,11 +25,38 @@
         "id": 4,
         "title": "Enter University Name Here",
         "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-4.png"
-      }
-    ]
-  },
-  {
-    "australia": [
+      },
+      {
+        "id": 8,
+        "title": "Enter University Name Here",
+        "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-2.png"
+      },
+      {
+        "id": 9,
+        "title": "Enter University Name Here",
+        "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-3.png"
+      },
+      {
+        "id": 10,
+        "title": "Enter University Name Here",
+        "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-6.png"
+      },
+      {
+        "id": 15,
+        "title": "Enter University Name Here",
+        "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-2.png"
+      },
+      {
+        "id": 16,
+
+        "title": "Enter University Name Here",
+        "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-3.png"
+      },
+      {
+        "id": 17,
+        "title": "Enter University Name Here",
+        "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-4.png"
+      },
       {
         "id": 5,
         "title": "Enter University Name Here",
@@ -47,7 +75,45 @@
     ]
   },
   {
-    "use": [
+    "Canada": [
+      {
+        "id": 2,
+        "title": "Enter University Name Here",
+        "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-2.png"
+      },
+      {
+        "id": 3,
+        "title": "Enter University Name Here",
+        "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-3.png"
+      },
+      {
+        "id": 4,
+        "title": "Enter University Name Here",
+        "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-4.png"
+      }
+    ]
+  },
+  {
+    "Australia": [
+      {
+        "id": 5,
+        "title": "Enter University Name Here",
+        "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-5.png"
+      },
+      {
+        "id": 6,
+        "title": "Enter University Name Here",
+        "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-6.png"
+      },
+      {
+        "id": 7,
+        "title": "Enter University Name Here",
+        "image": "https://jthemes.net/themes/wp/immiex/wp-content/themes/immiex/images/brand-7.png"
+      }
+    ]
+  },
+  {
+    "USA": [
       {
         "id": 8,
         "title": "Enter University Name Here",
@@ -66,7 +132,7 @@
     ]
   },
   {
-    "kingdom": [
+    "Kingdom": [
       {
         "id": 11,
         "title": "Enter University Name Here",
@@ -90,7 +156,7 @@
     ]
   },
   {
-    "new Zealand": [
+    "New Zealand": [
       {
         "id": 15,
         "title": "Enter University Name Here",
@@ -110,7 +176,7 @@
     ]
   },
   {
-    "china": [
+    "China": [
       {
         "id": 18,
         "title": "Enter University Name Here",
@@ -124,7 +190,7 @@
     ]
   },
   {
-    "korea": [
+    "South Korea": [
       {
         "id": 20,
         "title": "Enter University Name Here",
