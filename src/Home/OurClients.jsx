@@ -20,7 +20,7 @@ const OurClients = () => {
       .then((res) => res.json())
       .then((data) => setCards(data));
   }, []);
-  console.log(cards);
+  // console.log(cards);
 
   return (
     <div className="">
@@ -68,8 +68,8 @@ const OurClients = () => {
                         alt=""
                       />
                       <div>
-                        <h1>{category.name}</h1>
-                        <p>{category.title}</p>
+                        <h1 className="text-[rgb(44,63,105)] text-2xl font-bold">{category.name}</h1>
+                        <p className="text-xl">{category.title}</p>
                       </div>
                     </div>
                     <p className="mt-4">{category.subTitle}</p>

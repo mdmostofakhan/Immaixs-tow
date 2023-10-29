@@ -7,6 +7,8 @@ import BannerFix from '../components/banner/BannerFix';
 import Immigration from './Immigration';
 import Card from './Card';
 import OurClients from './OurClients';
+import News from './News';
+import Contact from './Contact';
 
 
 const Home = () => {
@@ -51,6 +53,12 @@ const Home = () => {
               </div>
               <div className='my-20'>
                 <OurClients></OurClients>
+              </div>
+              <div className='my-20'>
+                 <News></News>
+              </div>
+              <div className='my-20'>
+                <Contact></Contact>
               </div>
             </div>
     );
