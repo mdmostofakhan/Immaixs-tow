@@ -6,6 +6,7 @@ import About from './About';
 import BannerFix from '../components/banner/BannerFix';
 import Immigration from './Immigration';
 import Card from './Card';
+import OurClients from './OurClients';
 
 
 const Home = () => {
@@ -47,6 +48,9 @@ const Home = () => {
               </div>
               <div>
                  <Card></Card>
+              </div>
+              <div className='my-20'>
+                <OurClients></OurClients>
               </div>
             </div>
     );

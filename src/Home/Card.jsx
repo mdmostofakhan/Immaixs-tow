@@ -18,18 +18,18 @@ const Card = () => {
 
   return (
     <div className="my-20 container mx-auto">
-      <div className="">
-        <p className="text-6xl font-medium text-center text-[rgb(44,63,105)]">
+      <div className="flex justify-center flex-col   items-center text-center">
+        <p className="text-6xl font-serif text-[rgb(44,63,105)]">
           Partner Institutes & Universities
         </p>
-        <p className="mt-8  text-center w-[70%] ml-44 text-gray-400 text-xl">
+        <p className="mt-5 w-[50%] text-gray-400 text-xl">
           Cursus porta, feugiat primis in ultrice ligula risus auctor tempus
           dolor feugiat, felis lacinia risus interdum auctor id viverra dolor
           iaculis luctus placerat and massa
         </p>
       </div>
 
-      <div className="flex justify-center mt-8 items-center gap-5">
+      <div className="flex justify-center md:flex-col flex-col lg:flex-row mt-12 items-center gap-5">
         {tabs?.map((category, index) => {
           const categoryName = Object.keys(category)[0];
           return (
@@ -53,17 +53,21 @@ const Card = () => {
             if (categoryName === selectedCategory) {
               const categoryItems = category[categoryName];
               return (
-                <div
+                
+                 <div
                   key={index}
-                  className="grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 w-[65%] ml-72 justify-center  gap-5 mt-8"
+                  className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 mx-5 w-full justify-center items-center ml-10 gap-5 mt-8"
                 >
                   {categoryItems?.map((item, index) => (
-                    <div key={index} className="border hover:shadow-xl duration-300 text-center  p-8">
+                    <div className="">
+                    <div key={index} className="border hover:shadow-xl w-full rounded-md  duration-300 text-center   p-8">
                       <img className="w-full" src={item.image} alt="" />
                       <h2>{item.title}</h2>
                     </div>
+                    </div>
                   ))}
-                </div>
+                </div> 
+              
               );
             }
           })}
