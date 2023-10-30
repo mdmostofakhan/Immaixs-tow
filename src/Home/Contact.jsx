@@ -2,7 +2,6 @@ import React  from 'react';
 import images from '../assets/bg-img2.jpg'
 
 
-import { Icon } from "@iconify/react";
 
 
 
@@ -10,24 +9,23 @@ const Contact = () => {
    
 
     return (
-        <div className='mt-20'>
-       <div
-        className='h-[700px] w-full     bg-fixed bg-cover bg-no-repeat'
-       style={{
-          backgroundImage: `url(${images})`
-       }}
-       >
-           <div className='w-10/12 mx-auto'>
-           <div className='flex items-center justify-center ml-72   gap-40'>
-           <div className='text-white w-2/4 '>
+        
+           <div
+           className='w-full bg-fixed bg-cover bg-no-repeat'
+           style={{
+              backgroundImage: `url(${images})`
+           }}
+           >
+           <div className='flex items-center justify-center gap-10 flex-col md:flex-row  '>
+           <div className='text-white w-1/4 '>
              <p className='ml-3 font-semibold'>FREE 24/7 SUPPORT</p>
              <p className='text-5xl font-semibold mt-8'>Get Free & Quality Online Consultation</p>
              <p className='text-xl  font-semibold mt-8'>Euismod risus auctor egestas augue mauri viverra euismod tortor eugiat a mauris placerat</p>
              <p className='mt-5 '>Fringilla risus nec, luctus mauris orci auctor purus euismod and pretium purus at pretium ligula rutrum viverra tortor sapien sodales and primis ligula risus auctor egestas augue mauri viverra tortor in iaculis placerat eugiat mauris ipsum viverra tortor gravida</p>
            </div>
 
-           <div className='w-3/4 mt-16'>
-           <div className="  shadow-2xl w-[55%] p-8  rounded bg-white ">
+           <div className='my-16'>
+           <div className="  shadow-2xl  p-8  rounded bg-white ">
            <p className='font-semibold text-center text-black text-2xl'>Request Free Consultation</p>
            <div className="mt-8  w-full">
               <div className="w-full ">
@@ -89,21 +87,20 @@ const Contact = () => {
                       <option value="DE">Germany</option>
                       <option value="DE">Japan</option>
                       <option value="DE">Singapore</option>
-                    </select>
-             
+                    </select>        
                   </div>
                 </div>
               </div>
 
             <div className="bg-[rgb(255,69,0)] flex justify-center border-2 border-black hover:bg-white  items-center w-full p-4 mt-8">
-              <button className="text-white font-semibold z-10 hover:text-black ">SEND REQUEST</button>
+              <button className="text-white font-semibold  z-10 hover:text-black ">SEND REQUEST</button>
             </div>
            </div>
            </div>
            </div>
            </div>
-       </div>
-        </div>
+       
+        
     );
 };
 

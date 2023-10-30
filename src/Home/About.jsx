@@ -53,7 +53,7 @@ const About = () => {
                    <Icon className='' icon="octicon:dot-16" />
                    </div>
                     <div >
-                    <p className='lg:w-[80%] w-[400px] '>An magnis nulla dolor sapien augue erat iaculis purus tempor magna ipsum vitae purus primis pretium ligula rutrum luctus blandit porta justo integer. Feugiat a primis ultrice ligula</p>
+                    <p className='lg:w-[80%] w-[350px] '>An magnis nulla dolor sapien augue erat iaculis purus tempor magna ipsum vitae purus primis pretium ligula rutrum luctus blandit porta justo integer. Feugiat a primis ultrice ligula</p>
                     </div>
                  </div>
                  <div className='mt-8 flex  gap-1'>
@@ -61,7 +61,7 @@ const About = () => {
                    <Icon className='' icon="octicon:dot-16" />
                    </div>
                     <div >
-                    <p className='lg:w-[80%] w-[400px] '>Nemo ipsam egestas volute turpis dolores and aliquam quaerat sodales sapien undo pretium purus ligula tempus ipsum undo auctor a mauris lectus ipsum blandit</p>
+                    <p className='lg:w-[80%] w-[350px] '>Nemo ipsam egestas volute turpis dolores and aliquam quaerat sodales sapien undo pretium purus ligula tempus ipsum undo auctor a mauris lectus ipsum blandit</p>
                     </div>
                  </div>
                  <div className='mt-8 flex  gap-1'>
@@ -69,7 +69,7 @@ const About = () => {
                    <Icon className='' icon="octicon:dot-16" />
                    </div>
                     <div >
-                    <p className='lg:w-[80%] w-[400px] '>Quaerat sodales sapien undo euismod purus and blandit laoreet augue an augue egestas. Augue iaculis purus and augue tempor congue magna egestas magna ligula</p>
+                    <p className='lg:w-[80%] w-[350px] '>Quaerat sodales sapien undo euismod purus and blandit laoreet augue an augue egestas. Augue iaculis purus and augue tempor congue magna egestas magna ligula</p>
                     </div>
                  </div>
                  

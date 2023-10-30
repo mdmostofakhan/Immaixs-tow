@@ -23,19 +23,19 @@ const Home = () => {
 
     return (
         <div>
-            <Banner></Banner>
-            <div className='mt-8 container mx-auto w-[63%]  gap-5 grid grid-cols-3'>
+            <Banner></Banner> 
+            <div className='mt-8 container mx-auto md:grid-cols-2 lg:grid-cols-3 md:w-[63%]  gap-5 grid grid-cols-1'>
               {
                 visas?.map((visa,index) => (
-                    <div key={index}>
-                        <div className='border  flex gap-6 p-5 h-40 hover:shadow-lg '>
+                    
+                        <div key={index} className='border min-h-40 flex gap-6 w-[90%] mx-auto lg:flex-row  p-5  hover:shadow-lg '>
                             <p className='text-6xl'><span><Icon icon={visa.icon} /></span></p>
                             <div>
                                 <p className='text-2xl font-bold'>{visa.title}</p>
                                 <p className=' mt-2 '>{visa.text}</p>
                             </div>
                         </div>
-                     </div>
+                  
                 ))
               }
               </div>

@@ -29,7 +29,7 @@ const BannerFix = () => {
     return (
         <div>
              <div
-                 className='w-full flex justify-center items-center h-96 bg-fixed bg-cover bg-no-repeat'
+                 className='w-full min-h-[600px] flex justify-center items-center h-full  bg-fixed bg-cover bg-no-repeat'
                  style={{
                     backgroundImage: `url(${img})`
                  }}
@@ -39,7 +39,7 @@ const BannerFix = () => {
                           <p className='text-5xl mb-12 text-center text-white'>Thousands Of People Choose Our Services</p>
                           <p></p>
                       </div>
-                      <div className='flex gap-20 mt-12'>  
+                      <div className='flex flex-col md:flex-row gap-20 mt-12'>  
                            {
                             students?.map((student, index) => (
                                 <div key={index}>
