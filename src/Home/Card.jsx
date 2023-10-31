@@ -29,7 +29,7 @@ const Card = () => {
         </p>
       </div>
 
-      <div className="flex justify-center md:flex-col flex-col lg:flex-row mt-12 items-center gap-5">
+      <div className="flex justify-center md:flex-col flex-col  lg:flex-row mt-12 items-center gap-5">
         {tabs?.map((category, index) => {
           const categoryName = Object.keys(category)[0];
           return (
@@ -56,7 +56,7 @@ const Card = () => {
                 
                  <div
                   key={index}
-                  className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 mx-5 w-full justify-center items-center ml-10 gap-5 mt-8"
+                  className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1  w-full justify-center items-center ml-10 gap-5 mt-8"
                 >
                   {categoryItems?.map((item, index) => (
                     <div className="">

@@ -24,21 +24,22 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner> 
-            <div className='mt-8 container mx-auto md:grid-cols-2 lg:grid-cols-3 md:w-[63%]  gap-5 grid grid-cols-1'>
+            <div className='mt-8 mx-auto container  md:grid-cols-2 lg:grid-cols-3   gap-5 grid grid-cols-1'>
               {
                 visas?.map((visa,index) => (
                     
-                        <div key={index} className='border min-h-40 flex gap-6 w-[90%] mx-auto lg:flex-row  p-5  hover:shadow-lg '>
+                        <div key={index} className='border min-h-40 flex gap-6  mx-auto lg:flex-row  p-5 hover:shadow-lg '>
                             <p className='text-6xl'><span><Icon icon={visa.icon} /></span></p>
                             <div>
-                                <p className='text-2xl font-bold'>{visa.title}</p>
-                                <p className=' mt-2 '>{visa.text}</p>
+                                <p className='text-2xl text-[rgb(44,63,105)] font-bold'>{visa.title}</p>
+                                <p className='mt-2 w-[75%] '>{visa.text}</p>
                             </div>
                         </div>
                   
                 ))
               }
               </div>
+           
               <div className='mt-20 bg-[rgb(248,249,251)]'>
               <About></About>
               </div>
@@ -57,7 +58,7 @@ const Home = () => {
               <div className='my-20'>
                  <News></News>
               </div>
-              <div className='my-20'>
+              <div className='mt-28'>
                 <Contact></Contact>
               </div>
             </div>
